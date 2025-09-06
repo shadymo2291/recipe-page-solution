@@ -1,0 +1,212 @@
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: #f3e6d8ff;
+}
+* {
+    box-sizing: border-box;
+}
+:root {
+    --card-background-color: #ffffffff;
+    --p_color: #5f574eff;
+    --p_bigger-color: #854632ff;
+    --border-color: #e4ded8ff;
+    --p_Font_size: 18px;
+}
+/* main part start */
+main {
+    width: 600px;
+    margin: 50px auto 0;
+}
+main > h1 {
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, #FF9800, #009688);
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+    text-transform: capitalize;
+    font-weight: 800;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+main:hover h1 {
+    transform: rotateX(0deg);
+
+}
+@media (max-width: 768px) {
+    main {
+        width: 375px;
+    }
+    main > h1 {
+        font-size: 35px;
+        line-height: 1.4;
+    }
+}
+section {
+    padding: 30px;
+    background-color: var(--card-background-color);
+    border-radius: 15px;
+}
+section img {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.intro h2 {
+    font-family: "Young Serif", serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 30px 0 20px;
+}
+.intro p {
+    color: var(--p_color);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+.preparation {
+    background-color: #fff5faff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.preparation p {
+    color: #7b284fff;
+    font-weight: 600;
+    margin-top: 0;
+}
+.preparation ul {
+    margin: 0;
+    padding: 0 20px;
+}
+.preparation ul li::marker {
+    color: #7b284fff;
+    font-size: 10px;
+}
+.preparation ul li {
+    padding-left:15px;
+    font-size: 14px;
+    color: var(--p_color);
+}
+.preparation ul li:nth-child(2) {
+    margin: 10px 0;
+}
+.preparation ul li span {
+    font-weight: 600;
+}
+.ingredients {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+.ingredients h3 {
+    font-family: "Young Serif", serif;
+    color: var(--p_bigger-color);
+    font-size: 25px;
+    font-weight: 400;
+}
+.ingredients ul {
+    margin: 0;
+    padding: 0 20px;
+}
+.ingredients ul li::marker {
+    color: var(--p_bigger-color);
+    font-size: 10px;
+}
+.ingredients ul li {
+    padding-left:15px;
+    font-size: 14px;
+    color: var(--p_color);
+    margin-bottom: 10px;
+}
+.instructions {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+.instructions h3 {
+    font-family: "Young Serif", serif;
+    color: var(--p_bigger-color);
+    font-size: 25px;
+    font-weight: 400;
+}
+.instructions ol {
+    margin: 0;
+    padding: 0 20px;
+}
+.instructions ol li::marker {
+    font-family: "Outfit", sans-serif;
+    color: var(--p_bigger-color);
+    font-size: 15px;
+}
+.instructions ol li {
+    padding-left:15px;
+    font-size: 13px;
+    color: var(--p_color);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+.instructions ol li span{
+    font-weight: 600;
+}
+.nutrition h3 {
+    font-family: "Young Serif", serif;
+    color: var(--p_bigger-color);
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 20px;
+}
+.nutrition p {
+    color: var(--p_color);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.nutrition .details > div {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+}
+.nutrition .details > div:nth-child(4) {
+    border: none;
+}
+.nutrition .details p {
+    color: var(--p_color);
+    font-size: 14px;
+    width: 50%;
+    margin: 10px 0;
+}
+.nutrition .details p:nth-child(1) {
+    padding-left: 20px;
+}
+.nutrition .details p:nth-child(2) {
+    color: var(--p_bigger-color);
+    font-weight: 600;
+}
+
+
+
+
+
+
+/* footer start */
+footer {
+    padding-top: 30px;
+    z-index: 10;
+}
+footer P {
+    width: 210px;
+    text-align: center;
+    font-size: 13px;
+    margin: 0 auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, #FF9800, #009688);
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+footer span {
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 800;
+}
